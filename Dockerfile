@@ -16,6 +16,7 @@ RUN apk add --no-cache --update --virtual build-dependencies wget unzip && \
     unzip /tmp/hath-$HATH_VERSION.zip -d /opt/hath && \
     rm /tmp/hath-$HATH_VERSION.zip && \
     apk del build-dependencies
+    mv /opt/hath/HentaiAtHome.jar /opt/hath/h.jar
 
 ADD run/* /opt/hath/
 
